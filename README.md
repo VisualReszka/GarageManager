@@ -1,66 +1,30 @@
-## Foundry
+# StructsExercise
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
 
-Foundry consists of:
+This project is part of the **Structs Exercise** from the Base Learn documentation. It demonstrates Solidity concepts using **Foundry**, focusing on mappings and structs. The project is designed for educational purposes as part of the Base Learn course.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Features
 
-## Documentation
+- **addCar**: Adds a car to the sender's collection in the garage.
+- **getMyCars**: Returns all cars owned by the calling user.
+- **getUserCars**: Retrieves all cars owned by a specified user.
+- **updateCar**: Updates car details at a specific index for the calling user.
+- **resetMyGarage**: Deletes all cars stored for the sender.
 
-https://book.getfoundry.sh/
+## Setup
 
-## Usage
+To set up the project, ensure you have the following prerequisites:
 
-### Build
+- **Framework**: Foundry
+- **Contract**: `GarageManager.sol`
+- **Network**: Base Testnet (Sepolia)
 
-```shell
-$ forge build
-```
+## Notes
 
-### Test
+- This project is for educational purposes and should not be used in production environments.
+- Ensure you are connected to the Base Testnet (Sepolia) when deploying and interacting with the contracts.
 
-```shell
-$ forge test
-```
+## Progress
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- **Badges Earned**: 6 out of 13

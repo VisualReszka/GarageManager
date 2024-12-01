@@ -1,6 +1,11 @@
 [profile.default]
-src = "src"
-out = "out"
-libs = ["lib"]
+src = "src"  # Source directory for your contracts
+out = "out"  # Output directory for build artifacts
+libs = ["lib"]  # Libraries directory for dependencies
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# Solidity compiler settings
+solc-version = "0.8.17"  # Use Solidity version 0.8.17
+
+# Optimization settings
+optimizer = true         # Enable the optimizer
+optimizer-runs = 200     # Number of optimization runs
